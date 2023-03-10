@@ -1,2 +1,6 @@
-# mvc
- MVC Framework(Clone Of Laravel)
+# Installation
+```
+composer create-project devinow/mvc
+```
+# Usage
+Please Discover Our Framework!

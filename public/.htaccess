@@ -1,0 +1,59 @@
+#Disable Directory Browsing
+Options -Indexes
+#URL System
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+<FilesMatch "composer.json|composer.lock">
+Order allow,deny
+Deny from all
+allow from 127.0.0.1
+</FilesMatch>
+<FilesMatch ".htaccess">
+Order allow,deny
+Deny from all
+allow from 127.0.0.1
+</FilesMatch>
+#Errors
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 402 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 405 /index.php
+ErrorDocument 406 /index.php
+ErrorDocument 407 /index.php
+ErrorDocument 408 /index.php
+ErrorDocument 409 /index.php
+ErrorDocument 410 /index.php
+ErrorDocument 411 /index.php
+ErrorDocument 412 /index.php
+ErrorDocument 413 /index.php
+ErrorDocument 414 /index.php
+ErrorDocument 415 /index.php
+ErrorDocument 416 /index.php
+ErrorDocument 417 /index.php
+ErrorDocument 422 /index.php
+ErrorDocument 423 /index.php
+ErrorDocument 424 /index.php
+ErrorDocument 426 /index.php
+ErrorDocument 428 /index.php
+ErrorDocument 429 /index.php
+ErrorDocument 431 /index.php
+ErrorDocument 451 /index.php
+ErrorDocument 500 /index.php
+ErrorDocument 501 /index.php
+ErrorDocument 502 /index.php
+ErrorDocument 503 /index.php
+ErrorDocument 504 /index.php
+ErrorDocument 505 /index.php
+ErrorDocument 506 /index.php
+ErrorDocument 507 /index.php
+ErrorDocument 508 /index.php
+ErrorDocument 510 /index.php
+ErrorDocument 511 /index.php
+</IfModule>

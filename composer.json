@@ -1,0 +1,41 @@
+{
+    "name": "devinow/mvc",
+    "type": "project",
+    "description": "The Devinow MVC Framework.",
+    "keywords": ["framework", "devinow"],
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Devinow",
+          "email": "info@devinow.xyz",
+          "homepage": "https://devinow.xyz",
+          "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app"
+        },
+        "files": ["app/functions/helper.php"]
+    },
+    "require": {
+        "vlucas/phpdotenv": "*",
+        "devinow/template": "*",
+        "devinow/router": "*",
+        "illuminate/database": "*",
+        "phpmailer/phpmailer": "*",
+        "devinow/upload": "*",
+        "devinow/auth": "*"
+    },
+    "require-dev": {
+        "filp/whoops": "*"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "support": {
+        "email": "info@devinow.xyz"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
