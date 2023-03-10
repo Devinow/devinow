@@ -1,7 +1,7 @@
 {
-    "name": "devinow/mvc",
+    "name": "devinow/devinow",
     "type": "project",
-    "description": "The Devinow MVC Framework.",
+    "description": "The Devinow Framework.",
     "keywords": ["framework", "devinow"],
     "license": "MIT",
     "authors": [
@@ -30,6 +30,12 @@
     "require-dev": {
         "filp/whoops": "*"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devinow/devinow"
+        }
+    ],
     "config": {
         "optimize-autoloader": true
     },
