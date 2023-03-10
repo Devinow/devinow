@@ -15,6 +15,9 @@ class Errorhandler{
             $whoops = new \Whoops\Run;
             $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
             $whoops->register();
+            error_reporting(E_ALL);
+            ini_set('log_errors', TRUE); // Error/Exception file logging engine.
+            ini_set('error_log', __DIR__.'/../../storage/logs/error.log'); // Logging file path
         }else{
             $data=[
                 'to'=>$_ENV['MAIL_ADMIN'],
