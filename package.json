@@ -1,6 +1,6 @@
 {
     "author": "Taha Amin Ghafuri",
-    "description": "MVC Framework",
+    "description": "Devinow Framework",
     "private": true,
     "scripts": {
         "dev": "vite",
