@@ -5,29 +5,19 @@ namespace App\Classes;
 
 class Session{
     public static function add($name, $value){
-        if(!empty($name) && !empty($value)){
-            return $_SESSION[$name] = $value;
-        }
-
-        throw new \Exception('Name And Value Is Required');
+        return \Devinow\Cookie\Session::set($name, $value);
     }
 
     public static function get($name){
-        return $_SESSION[$name];
+        return \Devinow\Cookie\Session::get($name);
     }
 
     public static function has($name){
-        if(!empty($name)){
-            return (isset($_SESSION['name'])) ? true : false;
-        }
-
-        throw new \Exception('Name Is Required');
+        return \Devinow\Cookie\Session::has($name);
     }
 
     public static function remove($name){
-        if(self::has($name)){
-            unset($_SESSION[$name]);
-        }
+        return \Devinow\Cookie\Session::delete($name);
     }
 }
 

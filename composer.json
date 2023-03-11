@@ -25,6 +25,7 @@
         "illuminate/database": "*",
         "phpmailer/phpmailer": "*",
         "devinow/upload": "*",
+        "devinow/cookie": "*",
         "devinow/auth": "*"
     },
     "require-dev": {
