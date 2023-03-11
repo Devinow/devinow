@@ -19,14 +19,14 @@
         "files": ["bootstrap/helper.php"]
     },
     "require": {
+        "devinow/auth": "*",
+        "devinow/cookie": "*",
+        "devinow/upload": "*",
         "vlucas/phpdotenv": "*",
         "devinow/template": "*",
         "devinow/router": "*",
         "illuminate/database": "*",
-        "phpmailer/phpmailer": "*",
-        "devinow/upload": "*",
-        "devinow/cookie": "*",
-        "devinow/auth": "*"
+        "phpmailer/phpmailer": "*"
     },
     "require-dev": {
         "filp/whoops": "*"
