@@ -20,11 +20,16 @@
     },
     "require": {
         "devinow/auth": "*",
+        "devinow/base64": "*",
         "devinow/cookie": "*",
+        "devinow/database": "*",
+        "devinow/http": "*",
+        "devinow/id": "*",
+        "devinow/router": "*",
+        "devinow/string": "*",
+        "devinow/template": "*",
         "devinow/upload": "*",
         "vlucas/phpdotenv": "*",
-        "devinow/template": "*",
-        "devinow/router": "*",
         "illuminate/database": "*",
         "phpmailer/phpmailer": "*"
     },
