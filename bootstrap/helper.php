@@ -3,8 +3,8 @@
 use Devinow\Blade\Blade;
 
 function view($path, array $data = []){
-    $view = __DIR__.'/../../resources/views';
-    $cache = __DIR__.'/../../storage/cache';
+    $view = __DIR__.'/../resources/views';
+    $cache = __DIR__.'/../storage/cache';
 
     $blade = new Blade($view, $cache);
     echo $blade->view()->make($path, $data)->render();
@@ -15,7 +15,7 @@ function make($filename, $data){
 
     ob_start();
 
-    include __DIR__.'/../../resources/mails/'.$filename.'.php';
+    include __DIR__.'/../resources/mails/'.$filename.'.php';
 
     $content=ob_get_contents();
 
