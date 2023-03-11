@@ -4,7 +4,7 @@ use Devinow\Blade\Blade;
 
 function view($path, array $data = []){
     $view = __DIR__.'/../resources/views';
-    $cache = __DIR__.'/../storage/cache';
+    $cache = __DIR__.'/../storage';
 
     $blade = new Blade($view, $cache);
     echo $blade->view()->make($path, $data)->render();
