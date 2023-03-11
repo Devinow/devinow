@@ -15,6 +15,10 @@ set_error_handler([new \App\Classes\Errorhandler(), 'handleErrors']);
 require_once __DIR__.'/../config/_err.php';
 
 //Load Routing System
+$matched = false;
+
 require_once __DIR__.'/routing.php';
+
+if(!$matched) error();
 
 ?>

@@ -1,5 +1,7 @@
 <?php
 
-$router->get('/', [$dir.'Index','index']) && ($matched = true);
+$router->get('/','Index@index') && ($matched = true);
+
+$router->get('/app/','Index@index') && ($matched = true);
 
 ?>
