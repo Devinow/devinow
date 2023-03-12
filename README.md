@@ -1,6 +1,6 @@
 # Installation
 ```
-composer create-project devinow/framework
+composer create-project devinow/devinow
 ```
 # Usage
 Please Discover Our Framework!
