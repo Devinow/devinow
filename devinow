@@ -1,0 +1,11 @@
+#!/usr/bin/php
+<?php
+
+$GLOBALS['cli_dir'] = __DIR__;
+
+require_once __DIR__.'/core/loader.php';
+
+$cli = new Complex();
+$cli->run();
+
+?>

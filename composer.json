@@ -30,8 +30,8 @@
         "devinow/template": "*",
         "devinow/upload": "*",
         "vlucas/phpdotenv": "*",
-        "illuminate/database": "*",
-        "phpmailer/phpmailer": "*"
+        "phpmailer/phpmailer": "*",
+        "splitbrain/php-cli": "*"
     },
     "require-dev": {
         "filp/whoops": "*"

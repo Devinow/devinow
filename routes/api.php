@@ -1,5 +1,7 @@
 <?php
 
-$router->get('/','Index@index') && ($matched = true);
+$router->get('/',function(){
+    echo 'API';
+}) && ($matched = true);
 
 ?>

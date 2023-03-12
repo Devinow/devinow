@@ -6,10 +6,18 @@ if(!isset($_SESSION)) session_start();
 require_once __DIR__.'/../config/_env.php';
 
 //Instantiate Database Class
-new \App\Classes\Database();
+$dataSource = new \Devinow\Db\PdoDataSource('mysql');
+$dataSource->setHostname($_ENV['DB_HOST']);
+$dataSource->setPort(3306);
+$dataSource->setDatabaseName($_ENV['DB_NAME']);
+$dataSource->setCharset('utf8mb4');
+$dataSource->setUsername($_ENV['DB_USERNAME']);
+$dataSource->setPassword($_ENV['DB_PASSWORD']);
+$GLOBALS['db'] = \Devinow\Db\PdoDatabase::fromDataSource($dataSource);
+unset($dataSource);
 
 //Set Custom Error Handler
-set_error_handler([new \App\Classes\Errorhandler(), 'handleErrors']);
+set_error_handler([new \Core\Classes\Errorhandler(), 'handleErrors']);
 
 //Load Error Pages
 require_once __DIR__.'/../config/_err.php';
