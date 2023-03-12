@@ -1,6 +1,6 @@
 <?php
 
-use App\Classes\Router;
+use Core\Classes\Router;
 
 
 /* Routing Start */
