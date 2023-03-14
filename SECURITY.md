@@ -4,12 +4,12 @@
 
 Versions that are supported or receiving security updates are specified.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 11.0.0  | :white_check_mark: |
-| 10.0.0  | :white_check_mark: |
-| 9.0.0   | :white_check_mark: |
-| < 8.0   | :x:                |
+| Version | Supported          |   Status  |
+| ------- | ------------------ |-----------|
+| 11.0.0  | :white_check_mark: |  Unknown  |
+| 10.0.0  | :white_check_mark: |Development|
+| 9.0.0   | :white_check_mark: |Only Update|
+| < 8.0   | :x:                |End Of Line|
 
 ## Reporting a Vulnerability
 
