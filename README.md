@@ -1,6 +1,6 @@
 # Installation
 ```
-composer create-project devinow/devinow
+composer create-project devinow/devinow:v9.x-dev
 ```
 # Usage
 Please Use [Wiki](https://github.com/Devinow/devinow/wiki)
