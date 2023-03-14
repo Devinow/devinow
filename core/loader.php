@@ -8,7 +8,6 @@ require_once __DIR__.'/cli/cli.php';
 
 // Loading Classes
 require_once __DIR__.'/classes/csrf.php';
-require_once __DIR__.'/classes/database.php';
 require_once __DIR__.'/classes/errorhandler.php';
 require_once __DIR__.'/classes/mail.php';
 require_once __DIR__.'/classes/redirect.php';
