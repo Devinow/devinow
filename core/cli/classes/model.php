@@ -65,7 +65,8 @@ class Model{
             if(!file_exists($file)){
                 try{
                     $content = file_get_contents(__DIR__.'/../templates/model.php');
-                    $content = str::replace($content,'ModelName',str::low($name));
+                    $content = str::replace($content,'ModelName',$name);
+                    $content = str::replace($content,'TableName',str::low($name));
                     file_put_contents($file,$content);
 
                     $msg = 'success-'.$name.' Model Created';
