@@ -1,6 +1,7 @@
+/.github
+/.vscode
 /node_modules
 /vendor
 composer.phar
 composer.lock
 package-lock.json
-/.vscode
