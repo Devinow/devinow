@@ -3,4 +3,4 @@
 composer create-project devinow/devinow
 ```
 # Usage
-Please Discover Our Framework!
+Please Use [Wiki](https://github.com/Devinow/devinow/wiki)
