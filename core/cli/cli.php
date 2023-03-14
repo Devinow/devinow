@@ -26,7 +26,7 @@ class Complex extends CLI
 
         $options->registerCommand('create:view', 'The Create View Command');
         $options->registerCommand('remove:view', 'The Remove View Command');
-        //$options->registerCommand('view:clear', 'The Removing All Views Cache Command');
+        // $options->registerCommand('clear:view', 'The Removing All Views Cache Command');
 
         $options->registerCommand('create:model', 'The Create Model Command');
         $options->registerCommand('remove:model', 'The Remove Model Command');
